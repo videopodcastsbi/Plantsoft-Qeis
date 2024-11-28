@@ -1,0 +1,108 @@
+/* Container styling for 3-column layout */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Individual product card styling */
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px); /* 3 columns */
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Tag badge styling */
+.tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Product image styling */
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 150px; 
+    margin-bottom: 15px;
+}
+
+/* Product details styling */
+.product-details {
+    text-align: center;
+}
+
+.product-details h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.rating {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Action buttons */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.add-to-cart,
+.buy-now {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.buy-now {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 426px) {
+    .product-card {
+        width: 100%; 
+    }
+}
